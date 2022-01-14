@@ -1,0 +1,25 @@
+name: nlp
+channels:
+  - pytorch
+  - conda-forge
+  - default
+dependencies:
+  - python=3.8
+  # Notebook/visualization
+  - jupyterlab
+  - ipywidgets
+  - matplotlib
+  - seaborn
+  - tqdm
+  - python-graphviz
+  # Data Manipulation
+  - pandas
+  - numpy
+  # Machine Learning
+  - pytorch
+  - scikit-learn
+  - cupy
+  # Text Processing
+  - nltk
+  - beautifulsoup4
+  - spacy
