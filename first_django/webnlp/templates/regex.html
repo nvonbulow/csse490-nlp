@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<br>
+<br>
+
+{% block content %}
+<style>
+    .widthx{width:10px;}
+</style>
+
+<div class="container">
+    <table class="table table-striped widthx">
+        <thead>
+            <th scope="col">US Phone Numbers</th>
+        </thead>
+        <tbody>
+            {% for number in phone %}
+            <tr>
+                <td class="bg-primary">{{ number }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

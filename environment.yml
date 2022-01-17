@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - default
 dependencies:
-  - python=3.8
+  - python=3.9
   # Notebook/visualization
   - jupyterlab
   - ipywidgets
@@ -23,3 +23,6 @@ dependencies:
   - nltk
   - beautifulsoup4
   - spacy
+  # Web Servers
+  - django
+  - requests
