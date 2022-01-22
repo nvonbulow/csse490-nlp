@@ -12,6 +12,12 @@ dependencies:
   - seaborn
   - tqdm
   - python-graphviz
+  # ML Visualization
+  - pyldavis
+  - wordcloud
+  - termcolor
+  # Workflow
+  - joblib
   # Data Manipulation
   - pandas
   - numpy
