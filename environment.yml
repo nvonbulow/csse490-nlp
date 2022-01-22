@@ -16,6 +16,8 @@ dependencies:
   - pandas
   - numpy
   # Machine Learning
+  - tensorflow-gpu
+  - keras
   - pytorch
   - scikit-learn
   - cupy
