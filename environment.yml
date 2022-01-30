@@ -31,6 +31,7 @@ dependencies:
   - nltk
   - beautifulsoup4
   - spacy
+  - textblob
   # Web Servers
   - django
   - requests

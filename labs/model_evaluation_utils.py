@@ -59,9 +59,9 @@ def display_confusion_matrix(true_labels, predicted_labels, classes=[1,0]):
                                   labels=classes)
     cm_frame = pd.DataFrame(data=cm, 
                             columns=pd.MultiIndex(levels=[['Predicted:'], classes], 
-                                                  labels=level_labels), 
+                                                  codes=level_labels), 
                             index=pd.MultiIndex(levels=[['Actual:'], classes], 
-                                                labels=level_labels)) 
+                                                codes=level_labels)) 
     print(cm_frame) 
 
 
@@ -74,9 +74,9 @@ def display_confusion_matrix_pretty(true_labels, predicted_labels, classes=[1,0]
                                   labels=classes)
     cm_frame = pd.DataFrame(data=cm, 
                             columns=pd.MultiIndex(levels=[['Predicted:'], classes], 
-                                                  labels=level_labels), 
+                                                  codes=level_labels), 
                             index=pd.MultiIndex(levels=[['Actual:'], classes], 
-                                                labels=level_labels)) 
+                                                codes=level_labels)) 
     return cm_frame
     
 def display_classification_report(true_labels, predicted_labels, classes=[1,0]):
